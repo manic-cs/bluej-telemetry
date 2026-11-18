@@ -1,7 +1,15 @@
 package edu.uwi.telemetry.workspace;
 
-import edu.uwi.telemetry.model.EditorSample;
+/**
+ * Immutable record of what BlueJ looks like at one instant: the names of the open
+ * projects, their classes and the open editors (cursor position and line count).
+ * Created by a {@code WorkspaceSource} and consumed by the {@code WorkspaceDiffer}. The compact constructor
+ * makes unmodifiable copies, so a snapshot can be handed from BlueJ's UI thread to the sampler thread
+ * without locking.
+ * @author Rinard Guy
+ */
 
+import edu.uwi.telemetry.model.EditorSample;
 import java.util.List;
 import java.util.Set;
 

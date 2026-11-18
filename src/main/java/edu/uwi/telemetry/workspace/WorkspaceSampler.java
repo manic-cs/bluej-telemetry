@@ -1,8 +1,17 @@
 package edu.uwi.telemetry.workspace;
 
+/**
+ * Timer that samples the workspace (every second by default) and forwards the resulting
+ * events to the {@code EventSink}. Each tick captures a snapshot from the {@code WorkspaceSource}, lets the
+ * {@code WorkspaceDiffer} work out what changed and then runs every registered {@code PeriodicCheck}.
+ * It uses one daemon thread and a fixed delay between ticks, never throws, and skips a tick when no snapshot
+ * is available. {@code stop()} waits up to two seconds for a running tick and then runs the checks once more
+ * so the last partial second of typing is not lost.
+ * @author Rinard Guy
+ */
+
 import edu.uwi.telemetry.event.EventSink;
 import edu.uwi.telemetry.model.TelemetryEvent;
-
 import java.time.Duration;
 import java.util.List;
 import java.util.Objects;
@@ -12,7 +21,7 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public final class WorkspaceSampler {
-    private static final long STOP_TIMEOUT_MILLIS = 2000;
+    private static final long STOP_TIMEOUT_MILLIS = 2000; /** Maximum time stop() waits for an in-flight tick to finish. */
 
     private final WorkspaceSource source;
     private final WorkspaceDiffer differ;
@@ -48,6 +57,7 @@ public final class WorkspaceSampler {
         checks.add(Objects.requireNonNull(check));
     }
 
+    /** Takes one sample now. Returns how many events were produced. Never throws. */
     public int sampleOnce() {
         return sampleWorkspace() + runChecks();
     }
@@ -86,6 +96,10 @@ public final class WorkspaceSampler {
         return produced;
     }
 
+    /**
+     * Stops sampling. When this returns, no tick is still running (unless one is stuck for
+     * longer than the timeout), so no further events will reach the sink.
+     */
     public synchronized void stop() {
         if (executor == null) {
             return;
@@ -94,6 +108,7 @@ public final class WorkspaceSampler {
         ScheduledExecutorService stopping = executor;
         executor = null;
 
+        // shutdown() cancels the periodic task but lets a tick that is already running finish cleanly.
         stopping.shutdown();
         try {
             if (!stopping.awaitTermination(STOP_TIMEOUT_MILLIS, TimeUnit.MILLISECONDS)) {
@@ -106,6 +121,7 @@ public final class WorkspaceSampler {
             Thread.currentThread().interrupt();
         }
 
+        // Collect whatever happened since the last tick (for example the last second of typing)
         runChecks();
     }
 }

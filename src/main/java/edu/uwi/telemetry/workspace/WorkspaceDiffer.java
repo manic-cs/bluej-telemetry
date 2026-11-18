@@ -1,9 +1,17 @@
 package edu.uwi.telemetry.workspace;
 
+/**
+ * Compares consecutive workspace snapshots and turns the differences into events: new or
+ * deleted classes, changed method counts and cursor or line-count changes in an editor.
+ * The first time a project is seen it is only a baseline, so opening an existing project does not look like
+ * creating all its classes; a project that disappears is forgotten, so reopening it is a new baseline.
+ * It remembers the previous state and is used only by the sampler thread, so it needs no locking.
+ * @author Rinard Guy
+ */
+
 import edu.uwi.telemetry.event.TelemetryEventFactory;
 import edu.uwi.telemetry.model.EditorSample;
 import edu.uwi.telemetry.model.TelemetryEvent;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;

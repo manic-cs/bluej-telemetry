@@ -1,9 +1,22 @@
 package edu.uwi.telemetry.workspace;
 
+/**
+ * Detects project creation and deletion, which BlueJ does not report, by watching the
+ * project folders.
+ * <ul>
+ *   <li><b>Created:</b> when a project is opened and its {@code package.bluej} file was created seconds
+ *       earlier, the project was just created (File &gt; New Project).</li>
+ *   <li><b>Deleted:</b> every opened project folder is remembered, also across sessions in a small file on
+ *       this computer. A remembered folder that disappears (while its parent folder is still there, so an
+ *       unplugged drive is not mistaken for a deletion) is reported once as PROJECT_DELETED, whether it
+ *       vanished while BlueJ was running or while it was closed.</li>
+ * </ul>
+ * @author Rinard Guy
+ */
+
 import edu.uwi.telemetry.event.TelemetryEventFactory;
 import edu.uwi.telemetry.io.FileSupport;
 import edu.uwi.telemetry.model.TelemetryEvent;
-
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -30,6 +43,7 @@ public final class ProjectFolderWatcher implements PeriodicCheck {
     private final List<TelemetryEvent> pending = new ArrayList<>();
     private Instant lastCheck;
 
+    /** @param registryFile where remembered project folders are kept between sessions; null keeps them in memory only */
     public ProjectFolderWatcher(TelemetryEventFactory factory, Clock clock, Duration minInterval, Path registryFile) {
         this.factory = factory;
         this.clock = clock;
@@ -38,6 +52,7 @@ public final class ProjectFolderWatcher implements PeriodicCheck {
         loadRegistry();
     }
 
+    /** Call when a project is opened. Reports its creation if it is brand new and remembers its folder. */
     public synchronized void track(String projectName, Path folder) {
         Path key = folder.toAbsolutePath().normalize();
         if (tracked.containsKey(key)) {
@@ -91,6 +106,7 @@ public final class ProjectFolderWatcher implements PeriodicCheck {
         return deleted;
     }
 
+    /** BlueJ writes package.bluej when it creates a project; a recent creation time means a new project. */
     private boolean wasJustCreated(Path folder) {
         try {
             BasicFileAttributes attributes = Files.readAttributes(folder.resolve(PROJECT_MARKER_FILE), BasicFileAttributes.class);

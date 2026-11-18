@@ -1,16 +1,25 @@
 package edu.uwi.telemetry.workspace;
 
+/**
+ * Collects the text changes BlueJ reports for open editors (from its document listener)
+ * and turns them into one EDITOR_EDIT event per editor on every sampler tick. This keeps the listener, which
+ * runs on BlueJ's UI thread, down to a few additions and keeps the log small while still giving a typing
+ * cadence per second. Only lengths are passed in, never the text. An insertion of ten or more characters at
+ * once is counted as bulk (paste, code completion, undo or reload) and not as typing. The methods are
+ * synchronized because the listener and the sampler run on different threads.
+ * @author Rinard Guy
+ */
+
 import edu.uwi.telemetry.event.TelemetryEventFactory;
 import edu.uwi.telemetry.model.EditSummary;
 import edu.uwi.telemetry.model.TelemetryEvent;
-
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 public final class EditActivityTracker implements PeriodicCheck {
-    static final int BULK_INSERT_THRESHOLD = 10;
+    static final int BULK_INSERT_THRESHOLD = 10; /** An insertion this long in one change is treated as a paste, code completion, undo or reload. */
 
     private static final class Bucket {
         final String project;
@@ -33,6 +42,7 @@ public final class EditActivityTracker implements PeriodicCheck {
         this.factory = factory;
     }
 
+    /** One change: {@code removedChars} were replaced by {@code addedChars} in the given class. */
     public synchronized void record(String project, String className, int removedChars, int addedChars) {
         Bucket bucket = buckets.computeIfAbsent(project + "\u0000" + className, k -> new Bucket(project, className));
         bucket.edits++;
