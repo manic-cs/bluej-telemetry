@@ -5,7 +5,7 @@ public class Grades {
         for (int mark : marks) {
             total += mark;
         }
-        return total / marks.length;
+        return total / marks.length
     }
 
     public int highest(int[] marks) {
@@ -15,7 +15,7 @@ public class Grades {
                 highest = mark;
             }
         }
-        return highest;
+        return "highest";
     }
 
     public int countPasses(int[] marks, int passMark) {
@@ -25,7 +25,5 @@ public class Grades {
                 count++;
             }
         }
-        
-        return count;
     }
 }
