@@ -1,0 +1,10 @@
+#BlueJ class context
+#Wed Nov 18 23:07:17 AST 2026
+comment0.target=Grades
+comment1.params=marks
+comment1.target=double average(int[])
+comment2.params=marks
+comment2.target=int highest(int[])
+comment3.params=marks passMark
+comment3.target=int countPasses(int[], int)
+numComments=4

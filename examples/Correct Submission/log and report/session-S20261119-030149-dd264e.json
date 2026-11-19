@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "sessionId": "S20261119-030149-dd264e",
+  "studentId": "816044759",
+  "startTime": "2026-11-19T03:01:49.128Z",
+  "endTime": "2026-11-19T03:05:41.290Z",
+  "interrupted": true,
+  "sessionLengthSeconds": 232,
+  "activeSeconds": 191,
+  "idleSeconds": 40,
+  "compilations": {
+    "total": 1,
+    "successful": 1,
+    "failed": 0,
+    "successRate": 1.0,
+    "averageSecondsBetweenCompilations": 0.0
+  },
+  "executions": {
+    "total": 4,
+    "normal": 4,
+    "withException": 0,
+    "terminated": 0
+  },
+  "errorFrequency": {},
+  "errorCodeFrequency": {},
+  "runtimeExceptions": {},
+  "editing": {
+    "cursorOrLineChanges": 0,
+    "edits": 0,
+    "charactersTyped": 0,
+    "charactersBulkInserted": 0,
+    "charactersDeleted": 0,
+    "typingSeconds": 0,
+    "typingSpeedCharsPerSecond": 0.0,
+    "editsPerActiveMinute": 0.0,
+    "charactersTypedPerActiveMinute": 0.0
+  },
+  "classes": {
+    "created": 0,
+    "deleted": 0,
+    "modified": 0
+  },
+  "projects": {
+    "opened": 2,
+    "created": 0,
+    "deleted": 0
+  },
+  "events": [
+    {
+      "timestamp": "2026-11-19T03:01:50.230Z",
+      "type": "PROJECT_OPENED",
+      "data": {
+        "project": "Correct Submission",
+        "classCount": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:01:55.311Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:01:55.811Z",
+      "type": "COMPILE_SUCCEEDED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:02:18.190Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "<constructor>",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:02:34.302Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "average",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:02:52.188Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "countPasses",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:03:18.692Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "highest",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:04:58.967Z",
+      "type": "PROJECT_OPENED",
+      "data": {
+        "project": "Incorrect Submission",
+        "classCount": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:04:59.036Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:04:59.083Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 8,
+        "message": "';' expected",
+        "category": "Syntax error",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:04:59.122Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:04.486Z",
+      "type": "PROJECT_CLOSED",
+      "data": {
+        "project": "Correct Submission"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:41.290Z",
+      "type": "PROJECT_CLOSED",
+      "data": {
+        "project": "Incorrect Submission"
+      }
+    }
+  ]
+}

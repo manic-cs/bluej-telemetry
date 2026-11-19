@@ -1,0 +1,1145 @@
+{
+  "schemaVersion": 1,
+  "sessionId": "S20261119-030545-629f32",
+  "studentId": "816043211",
+  "startTime": "2026-11-19T03:05:45.100Z",
+  "endTime": "2026-11-19T03:10:45.381Z",
+  "interrupted": false,
+  "sessionLengthSeconds": 300,
+  "activeSeconds": 269,
+  "idleSeconds": 30,
+  "compilations": {
+    "total": 5,
+    "successful": 2,
+    "failed": 3,
+    "successRate": 0.4,
+    "averageSecondsBetweenCompilations": 19.25
+  },
+  "executions": {
+    "total": 6,
+    "normal": 6,
+    "withException": 0,
+    "terminated": 0
+  },
+  "errorFrequency": {
+    "Type mismatch": 2,
+    "Missing return": 1
+  },
+  "errorCodeFrequency": {
+    "compiler.err.prob.found.req": 2,
+    "compiler.err.missing.ret.stmt": 1
+  },
+  "runtimeExceptions": {},
+  "editing": {
+    "cursorOrLineChanges": 22,
+    "edits": 111,
+    "charactersTyped": 102,
+    "charactersBulkInserted": 0,
+    "charactersDeleted": 72,
+    "typingSeconds": 13,
+    "typingSpeedCharsPerSecond": 7.846,
+    "editsPerActiveMinute": 24.703,
+    "charactersTypedPerActiveMinute": 22.7
+  },
+  "classes": {
+    "created": 0,
+    "deleted": 0,
+    "modified": 11
+  },
+  "projects": {
+    "opened": 1,
+    "created": 0,
+    "deleted": 0
+  },
+  "events": [
+    {
+      "timestamp": "2026-11-19T03:05:46.354Z",
+      "type": "PROJECT_OPENED",
+      "data": {
+        "project": "Incorrect Submission",
+        "classCount": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:47.084Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:47.750Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 8,
+        "message": "';' expected",
+        "category": "Syntax error",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:48.106Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:51.352Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:51.352Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:51.408Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 8,
+        "message": "';' expected",
+        "category": "Syntax error",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:51.439Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:53.258Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 7,
+        "column": 34,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:56.260Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 7,
+        "column": 35,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:56.714Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:57.261Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 7,
+        "column": 36,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:57.261Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 1,
+        "typedChars": 1,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:58.458Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:58.653Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "message": "incompatible types: java.lang.String cannot be converted to int",
+        "category": "Type mismatch",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:58.688Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:05:58.738Z",
+      "type": "COMPILE_DIAGNOSTIC",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "code": "compiler.err.prob.found.req",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:13.302Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 16,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:14.304Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 15,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:15.047Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:15.305Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 17,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:15.305Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 2,
+        "typedChars": 2,
+        "bulkChars": 0,
+        "deletedChars": 9
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:16.306Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 20,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:16.306Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 3,
+        "typedChars": 3,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:18.459Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:18.525Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "message": "incompatible types: int[] cannot be converted to int",
+        "category": "Type mismatch",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:18.551Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:18.578Z",
+      "type": "COMPILE_DIAGNOSTIC",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "code": "compiler.err.prob.found.req",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:25.005Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:25.327Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 17,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:25.327Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 3,
+        "typedChars": 0,
+        "bulkChars": 0,
+        "deletedChars": 3
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:26.327Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 4,
+        "typedChars": 2,
+        "bulkChars": 0,
+        "deletedChars": 2
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:27.328Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 22,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:27.328Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 5,
+        "typedChars": 5,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:28.734Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:28.792Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 28,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:28.829Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:28.854Z",
+      "type": "COMPILE_DIAGNOSTIC",
+      "data": {
+        "file": "Grades.java",
+        "line": 28,
+        "code": "compiler.err.missing.ret.stmt",
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:47.356Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 26,
+        "column": 9,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:52.364Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 25,
+        "column": 13,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.162Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.183Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.252Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 29,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.262Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.369Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 27,
+        "column": 8,
+        "lineCount": 30
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.369Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 3,
+        "typedChars": 9,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.725Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.736Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.791Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 30,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.802Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:56.941Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:57.371Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 12,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:57.371Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 7,
+        "typedChars": 13,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:58.372Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 18,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:58.372Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 6,
+        "typedChars": 6,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:59.373Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 21,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:06:59.373Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 3,
+        "typedChars": 3,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:02.360Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:02.441Z",
+      "type": "COMPILE_SUCCEEDED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:03.382Z",
+      "type": "METHOD_COUNT_CHANGED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "methodCount": 3
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.234Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.247Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.269Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 29,
+        "message": "';' expected",
+        "category": "Syntax error",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.274Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.388Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 20,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.388Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 1,
+        "typedChars": 0,
+        "bulkChars": 0,
+        "deletedChars": 1
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:08.739Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.174Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.241Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 29,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.261Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.291Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.358Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 28,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.366Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.392Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 17,
+        "column": 18,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.392Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 22,
+        "typedChars": 0,
+        "bulkChars": 0,
+        "deletedChars": 34
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.813Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.833Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 8,
+        "message": "';' expected",
+        "category": "Syntax error",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:09.842Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:10.394Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 7,
+        "column": 35,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:10.394Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 14,
+        "typedChars": 14,
+        "bulkChars": 0,
+        "deletedChars": 9
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:12.397Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 1,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.114Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.126Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.180Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "message": "incompatible types: java.lang.String cannot be converted to int",
+        "category": "Type mismatch",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.192Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.399Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 7,
+        "column": 36,
+        "lineCount": 29
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.399Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 1,
+        "typedChars": 1,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.625Z",
+      "type": "CLASS_MODIFIED",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades"
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.658Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.718Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 18,
+        "message": "cannot find symbol\n  symbol:   variable m\n  location: class Grades",
+        "category": "Cannot find symbol",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:13.731Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.164Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.219Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 29,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.249Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.267Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.332Z",
+      "type": "COMPILE_ERROR",
+      "data": {
+        "file": "Grades.java",
+        "line": 30,
+        "message": "missing return statement",
+        "category": "Missing return",
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.349Z",
+      "type": "COMPILE_FAILED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.401Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 11,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:14.401Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 26,
+        "typedChars": 33,
+        "bulkChars": 0,
+        "deletedChars": 14
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:15.403Z",
+      "type": "EDITOR_SAMPLE",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "line": 28,
+        "column": 21,
+        "lineCount": 31
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:15.403Z",
+      "type": "EDITOR_EDIT",
+      "data": {
+        "project": "Incorrect Submission",
+        "class": "Grades",
+        "edits": 10,
+        "typedChars": 10,
+        "bulkChars": 0,
+        "deletedChars": 0
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:15.692Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:15.755Z",
+      "type": "COMPILE_SUCCEEDED",
+      "data": {
+        "files": 1,
+        "userGenerated": false
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:17.863Z",
+      "type": "COMPILE_STARTED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:17.925Z",
+      "type": "COMPILE_SUCCEEDED",
+      "data": {
+        "files": 1,
+        "userGenerated": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:44.295Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "<constructor>",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:07:58.286Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "average",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:08:17.452Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "average",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:08:34.313Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "countPasses",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:08:54.527Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "countPasses",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:09:14.735Z",
+      "type": "EXECUTION_FINISHED",
+      "data": {
+        "class": "Grades",
+        "method": "highest",
+        "outcome": "NORMAL",
+        "hasResult": true
+      }
+    },
+    {
+      "timestamp": "2026-11-19T03:10:43.047Z",
+      "type": "PROJECT_CLOSED",
+      "data": {
+        "project": "Incorrect Submission"
+      }
+    }
+  ]
+}
